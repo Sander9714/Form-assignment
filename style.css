@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  /*margin: 0 auto; gjør at gridsene havner i senter av nettsiden*/
+}
+body {
+  min-height: 100svh;
+  background: #b5bcc4;
+}
+h1 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 70px;
+  color: steelblue;
+  margin-top: 4rem;
+  text-align: center;
+  background: gold;
+  border: 7px;
+  border-style: ridge;
+  border-color: black;
+}
+.regbox {
+  display: flex;
+  justify-content: center;
+}
+.reg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: grey;
+  width: 200px;
+  height: 50px;
+  border: 2px;
+  border-style: groove;
+  border-radius: 30px;
+}
+.logg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: grey;
+  width: 200px;
+  height: 50px;
+  border: 2px;
+  border-style: groove;
+  border-radius: 30px;
+}
+.grid {
+  margin-top: 10%;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+  row-gap: 20px;
+  margin: 0;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 5px black;
+  font-size: clamp(1rem, 2vw, 2rem);
+  text-transform: uppercase;
+  height: 200px;
+}
+.one {
+  background-color: red;
+  background-image: url(img/weights.jpg);
+  background-size: cover;
+}
+
+.two {
+  background-color: purple;
+  background-image: url(img/pushup.jpg);
+  background-size: cover;
+}
+
+.three {
+  background-color: yellow;
+  background-image: url(img/jogging.jpg);
+    background-size: contain;
+
+}
+
+.four {
+  background-color: blue;
+  background-image: url(img/boxing.jpg);
+    background-size: cover;
+
+}
+
+.five {
+  background-color: salmon;
+  background-image: url(img/crossfit.jpg);
+    background-size: cover;
+
+}
+
+.six {
+  background-color: chocolate;
+  background-image: url(img/yoga.jpg);
+    background-size: cover;
+
+}
+
+/*CSS registreringsskjema*/
+
+form {
+  height: 500px;
+  width: 700px;
+  margin-top: 0px;
+  margin-inline: auto;
+  max-width: 80vw;
+  min-height: 50svh;
+  border: 5px;
+  border-style: dotted;
+  border-color: black;
+  background: #a6ded2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "fill first" "fill second"
+    "fill third" "fill third"
+    "fill fourth" "fill fifth"
+    "fill sixth"
+    "fill seventh";
+  gap: 0px;
+}
+.fill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 15px;
+  text-transform: uppercase;
+  height: 100px;
+}
+.tittel {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  background: lightgreen;
+  width: 400px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-style: outset;
+}
+label {
+  margin: 5px;
+  font-weight: bold;
+}
+input {
+  border-radius: 5px;
+  display: flex;
+}
+.input-box {
+  height: 30px;
+  width: 200px;
+}
+
+.fifth {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px;
+}
+img {
+    back
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registreringsskjema</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2 class="tittel">Registreringsskjema</h2>
+    <form>
+      <div class="fill first">
+        <label for="Fornavn">Fornavn</label>
+        <input
+          type="fornavn"
+          id="fornavn"
+          placeholder="Fornavn"
+          class="input-box"
+          required
+        />
+      </div>
+      <div class="fill second">
+        <label for="Etternavn">Etternavn</label>
+        <input
+          type="etternavn"
+          id="etternavn"
+          placeholder="Etternavn"
+          class="input-box"
+          required
+        />
+      </div>
+      <div class="fill third">
+        <label for="email">Email</label>
+        <input type="email" id="email" class="input-box" />
+      </div>
+      <div class="fill fourth">
+        <label for="tel">Phone number</label>
+        <input type="tel" id="tel" class="input-box" />
+      </div>
+
+      <div class="fill fifth">
+        <h3>Kjønn:</h3>
+        <label for="radio">Mann</label>
+        <input type="radio" id="radio" />
+        <label for="radio">Kvinne</label>
+        <input type="radio" id="radio" />
+      </div>
+
+      <div class="fill sixth">
+        <label for="datalist">Betalingsmåte</label>
+        <input list="Betalingsmåte" class="input-box" />
+        <datalist id="Betalingsmåte">
+          <option value="Visa">Internet Explorer</option>
+          <option value="Vipps"></option>
+          <option value="Mastercard"></option>
+        </datalist>
+      </div>
+
+      <div class="fill seventh"><input type="Submit" value="Submit" /></div>
+    </form>
+  </body>
+</html>
